@@ -32,7 +32,7 @@ export default class Login extends Component {
   onLoginButton = async () => {
     const { userName } = this.state;
     this.setState({ loading: true });
-    await createUser(userName);
+    await createUser({ name: userName });
     this.setState({
       loading: false,
       loginUser: true,
