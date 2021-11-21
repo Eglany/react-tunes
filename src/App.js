@@ -21,6 +21,7 @@ class App extends React.Component {
             <Route path="/profile/edit" component={ ProfileEdit } />
             <Route path="/profile" component={ Profile } />
             <Route exact path="/" component={ Login } />
+            <Route path="/album/:id" render={ (props) => <Album { ...props } /> } />
             <Route path="*" component={ NotFound } />
           </Switch>
         </BrowserRouter>
