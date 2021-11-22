@@ -21,12 +21,13 @@ export default class Albums extends Component {
         </h3>
         <ol>
           {albums.map((
-            { artistId, artworkUrl100, collectionId, collectionName },
+            { artistID, artworkUrl100, collectionId, collectionName },
           ) => (
-            <li key={ artistId }>
+            <li key={ artistID }>
               <img src={ artworkUrl100 } alt="album" />
               <br />
               <Link
+                key={ collectionId }
                 to={ `/album/${collectionId}` }
                 data-testid={ `link-to-album-${collectionId}` }
               >
