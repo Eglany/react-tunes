@@ -15,9 +15,9 @@ export default class Album extends Component {
     };
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     const { match: { params: { id } } } = this.props;
-    await this.renderMusic(id);
+    this.renderMusic(id);
   }
 
   renderMusic = async (id) => {
@@ -27,7 +27,6 @@ export default class Album extends Component {
       loading: false,
       musics: musicsAPI,
     });
-    console.log(musicsAPI);
   }
 
   render() {
@@ -43,7 +42,11 @@ export default class Album extends Component {
             <img src={ musics[0].artworkUrl100 } alt={ musics[0].collectionName } />
             <h2 data-testid="album-name">{musics[0].collectionName}</h2>
             <h4 data-testid="artist-name">{musics[0].artistName}</h4>
-            {musics.map((music) => <MusicCard key={ music.trackId } { ...music } />)}
+            {musics.map((music) => (
+              <MusicCard
+                { ...music }
+                key={ music.trackId }
+              />))}
           </div>
         )}
         </section>
