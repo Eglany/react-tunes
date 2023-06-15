@@ -1,0 +1,48 @@
+.button-favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.button-favorite::after {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: #FFF;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s linear;
+  top: 115%;
+}
+
+.favorite-icon {
+  font-size: 1.5rem;
+  transition: .2s linear;
+}
+
+.favorite-icon path {
+  fill: #FFF;
+  transition: .2s linear;
+}
+
+.button-favorite:hover > .favorite-icon {
+  transform: scale(1.1);
+}
+
+.button-favorite:hover > .favorite-icon path {
+  fill: #E91E63;
+}
+
+.button-favorite:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 105%;
+}
+

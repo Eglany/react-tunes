@@ -1,0 +1,19 @@
+.container-player {
+  background-color: #181818;
+  border-top: 0.1rem grey solid;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.playing-now {
+  display: flex;
+  width: 50vh;
+}
+
+.playing-now div {
+  display: flex;
+}

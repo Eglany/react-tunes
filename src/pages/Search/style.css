@@ -1,0 +1,10 @@
+.page-search {
+  display: flex;
+}
+
+.container-search-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 15rem;
+}
