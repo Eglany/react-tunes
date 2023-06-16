@@ -19,8 +19,8 @@ Antes de iniciar o projeto, verifique se o seguinte software está instalado em 
 ## Instalação e Execução
 Siga as etapas abaixo para executar o projeto localmente:
 
-- Clone o repositório do projeto: git clone https://github.com/Eglany/react-tunes.git
-- Navegue até o diretório do projeto: cd react-tunes
-- Instale as dependências do projeto: npm install
-- Inicie o servidor de desenvolvimento: npm start
+- Clone o repositório do projeto: `git clone https://github.com/Eglany/react-tunes.git`
+- Navegue até o diretório do projeto: `cd react-tunes`
+- Instale as dependências do projeto: `npm install`
+- Inicie o servidor de desenvolvimento: `npm start`
 - Abra o aplicativo no seu navegador em http://localhost:3000
