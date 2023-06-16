@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { connect } from 'react-redux';
+import { fetchAlbum } from '../../redux/actions.js/searchAlbumAction';
 import validateMinCharactes from '../../services/validateSearchInput';
 import './style.css';
-import { fetchAlbum } from '../../redux/actions.js/searchAlbumAction';
 
 const INITIAL_SEARCHBAR_STATE = {
   inputSearch: '',
@@ -52,6 +52,7 @@ class SearchBar extends Component {
             placeholder="Search"
             onChange={ this.onInputChange }
             onKeyUp={ ({ key }) => (key === 'Enter') && this.onButtonClick() }
+            autoComplete="off"
             data-testid="search-artist-input"
           />
           <button

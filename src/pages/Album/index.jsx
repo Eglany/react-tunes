@@ -1,13 +1,12 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import SideBar from '../../components/SideBar';
 // import getMusics from '../../services/musicsAPI';
 import Loading from '../../components/Loading';
 import MusicCard from '../../components/MusicCard';
-import MusicPlayer from '../../components/MusicPlayer';
-import './style.css';
 import { fetchMusic } from '../../redux/actions.js/fetchMusicsAction';
+import './style.css';
 
 class Album extends Component {
   componentDidMount() {
@@ -45,7 +44,7 @@ class Album extends Component {
             )
           )}
         </section>
-        <MusicPlayer />
+        {/* <MusicPlayer /> */}
       </section>
     );
   }
