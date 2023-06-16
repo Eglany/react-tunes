@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { FaHeart, FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaHeart } from 'react-icons/fa';
 // import { getUser } from '../../services/userAPI';
 // import Loading from '../Loading';
 import './style.css';

@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { FaPlay } from 'react-icons/fa';
-import './style.css';
-import Favorite from '../Favorite';
+import { connect } from 'react-redux';
 import { playingMusic } from '../../redux/actions.js/playingNowAction';
+import './style.css';
 
 class MusicCard extends Component {
   constructor() {
@@ -48,7 +47,6 @@ class MusicCard extends Component {
 
     render() {
       const {
-        trackId,
         trackName,
         artistName,
       } = this.props;
@@ -66,9 +64,9 @@ class MusicCard extends Component {
               <span>{artistName}</span>
             </div>
           </div>
-          <div>
+          {/* <div>
             <Favorite songId={ trackId } />
-          </div>
+          </div> */}
         </div>
       );
     }
